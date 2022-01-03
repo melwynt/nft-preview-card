@@ -1,22 +1,21 @@
 :root {
-    --color-primary: #eb2f64;
-    --color-primary-light: #FF3366;
-    --color-primary-dark: #BA265D;
+    // --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    // --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
 
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f4f2f2;
-    --color-grey-light-3: #f0eeee;
-    --color-grey-light-4: #ccc;
-    
-    --color-grey-dark-1: #333;
-    --color-grey-dark-2: #777;
-    --color-grey-dark-3: #999;
+    // --line: 1px solid var(--color-grey-light-2);
 
-    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
 
-    --line: 1px solid var(--color-grey-light-2);
+    --text: rgba(148, 171, 203, 1);
+    --text-turquoise: rgba(2, 252, 250, 1);
+    --text-turquoise-alpha: rgba(2, 252, 250, 0.5);
 }
+
+$bp-smallest: 22em; // 352px
 
 * {
     margin: 0;
@@ -31,15 +30,13 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    font-size: 62.5%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-grey-dark-2);
 
-    min-height: 100vh;
+    background-color: var(--main-bg);
 }
