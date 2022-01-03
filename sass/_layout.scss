@@ -1,7 +1,10 @@
 main {
     display: flex;
-    // height: 100vh;
-    // flex-direction: column;
+    height: 100vh;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        height: auto;
+    }
 }
