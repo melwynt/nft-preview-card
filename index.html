@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | NFT preview card component</title>
 
@@ -17,26 +21,33 @@
     </style>-->
 </head>
 <body>
-    <div class="nft-card">
-        <img src="img/image-equilibrium.jpg" class="nft-card__image" alt="">
-        <h2 class="nft-card__name">Equilibrium #3429</h2>
-        <div class="nft-card__text">Our Equilibrium collection promotes balance and calm.</div>
-        <div class="nft-card__details">
-            <svg class="search__icon-token">
-                <use xlink:href="img/icon-ethereum.svg"></use>
-            </svg>
-            <div class="nft-card__value">0.041 ETH</div>
-            <svg class="nft-card__icon-clock">
-                <use xlink:href="img/icon-clock.svg"></use>
-            </svg>
-            <div class="nft-card__countdown">3 days left</div>
-        </div>
-        <div class="nft-card__creator-details">
-            <img src="img/image-avatar.png" class="nft-card__creator-details__photo" alt="">
-            <div class="nft-card__creator-details__text">Creation of Jules Wyvern</div>
-        </div>
-    </div>
+    <main>
+        <div class="nft-card">
+            <div class="nft-card__image-holder">
+                <img src="img/image-equilibrium.jpg" class="nft-card__image" alt="">
+            </div>
+            <div class="nft-card__box">
+                <div class="nft-card__name">Equilibrium #3429</div>
+                <div class="nft-card__text">Our Equilibrium collection promotes balance and calm.</div>
+                <div class="nft-card__details">
+                    <svg class="nft-card__icon-token">
+                        <use xlink:href="img/sprite.svg#icon-ethereum"></use>
+                    </svg>
+                    <div class="nft-card__value">0.041 ETH</div>
+                    <svg class="nft-card__icon-clock">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <div class="nft-card__countdown">3 days left</div>
+                </div>
 
+                <div class="nft-card__creator-details">
+                    <img src="img/image-avatar.png" class="nft-card__creator-details__photo" alt="">
+                    <div class="nft-card__creator-details__text">Creation of <span>Jules Wyvern</span></div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
     <!--<div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Melwyn Turbant</a>.
